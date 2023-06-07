@@ -7,7 +7,7 @@ import classes from './Ticket.module.scss';
 const Ticket = ({ item }) => {
   const getPrice = (price) => {
     if (price.toString().length === 6) {
-      return `${price.toString().slice(0, 3)} ${price.toString().slice(2, 6)} Р`;
+      return `${price.toString().slice(0, 3)} ${price.toString().slice(3, 6)} Р`;
     } else {
       return `${price.toString().slice(0, 2)} ${price.toString().slice(2, 5)} Р`;
     }

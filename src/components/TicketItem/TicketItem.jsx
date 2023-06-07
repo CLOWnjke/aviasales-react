@@ -51,7 +51,7 @@ const TicketItem = ({ data }) => {
             </>
           </div>
           <div>{getFlightTime(there.duration)}</div>
-          <div>{`${back.origin} – ${back.destination}`}</div>
+          <div>{`${there.stops.join(', ')}`}</div>
         </div>
       </div>
       <div className={classes.header}>
@@ -62,12 +62,13 @@ const TicketItem = ({ data }) => {
         </div>
         <div className={classes.info}>
           <div>
+            {' '}
             <>
               {getDate(back.date.slice(0, -1))} - {getDate(getTime(back.date.slice(0, -1), back.duration))}
             </>
           </div>
           <div>{getFlightTime(back.duration)}</div>
-          <div>{`${back.origin} – ${back.stops.join(', ')}`}</div>
+          <div>{`${back.stops.join(', ')}`}</div>
         </div>
       </div>
     </div>
