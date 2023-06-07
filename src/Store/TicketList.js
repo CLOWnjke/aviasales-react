@@ -52,12 +52,12 @@ const sliceTickets = createSlice({
     builder.addCase(thunkSearchId.pending, (state) => {
       state.status = 'loading';
     }),
-      builder.addCase(thunkSearchId.fulfilled, (state, action) => {
-        state.searchId = action.payload;
-      }),
-      builder.addCase(fetchTicket.fulfilled, (state, action) => {
-        state.data.push(...action.payload);
-      });
+    builder.addCase(thunkSearchId.fulfilled, (state, action) => {
+      state.searchId = action.payload;
+    }),
+    builder.addCase(fetchTicket.fulfilled, (state, action) => {
+      state.data.push(...action.payload);
+    });
   },
 });
 
