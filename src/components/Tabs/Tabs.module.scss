@@ -18,3 +18,16 @@
   background-color: #2196f3;
   color: #fff;
 }
+
+@media (max-width: 320px) {
+  .button {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 8px;
+    }
+  }
+}

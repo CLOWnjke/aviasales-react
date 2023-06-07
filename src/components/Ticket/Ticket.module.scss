@@ -18,3 +18,12 @@
   line-height: 24px;
   color: #2196f3;
 }
+
+@media (max-width: 320px) {
+  .ticket {
+    width: 300px;
+    span {
+      font-size: 8px;
+    }
+  }
+}
